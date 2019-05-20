@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let NumberRegularExp = function (str) {
+        let regexp = /^[0-9]{2}-0[0-9]{9}$/;
+        if(regexp.test(str)){
+            return str +" la so dien thoai"+"<br>";
+        }else {
+            return str +" khong la so dien thoai"+"<br>";
+        }
+    };
+    let number1="a8-0388575383";
+    let number2="84-0388575383";
+    document.write(NumberRegularExp(number1));
+    document.write(NumberRegularExp(number2));
+</script>
+
+</body>
+</html>
